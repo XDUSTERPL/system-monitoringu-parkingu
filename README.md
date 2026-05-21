@@ -7,18 +7,17 @@ Aplikacja pobiera strumień RTSP z kamery IP działającej w prywatnej sieci 5G,
 ## Funkcjonalności
 
 - pobieranie obrazu z kamery IP
-- analiza zajętości miejsc parkingowych w czasie rzeczywistym z wykorzystaniem modelu YOLO
-- prezentacja wyników w aplikacji webowej
+- przetwarzanie obrazu oraz analiza zajętości miejsc parkingowych w czasie rzeczywistym z wykorzystaniem OpenCV i modelu YOLO
 - zapis i odczyt danych statystycznych z bazy PostgreSQL
+- podgląd przetworzonego strumienia RTSP oraz przegląd statystyk wykorzystania parkingu dostępnych dla zalogowanych użytkowników
 
 ## Technologie
 
 - JavaScript, React
-- Python, Django
+- Python, Django, OpenCV, YOLO
 - PostgreSQL
-- YOLO
 
 ## Architektura
 
 Frontend odpowiada za prezentację wyników analizy oraz interakcję użytkownika z systemem.
-Backend realizuje przetwarzanie obrazu, komunikację z kamerą IP oraz obsługę danych.
+Backend odpowiada za przetwarzanie obrazu, komunikację z kamerą IP oraz obsługę danych i logiki aplikacji.
