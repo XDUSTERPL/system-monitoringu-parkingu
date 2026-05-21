@@ -1,0 +1,21 @@
+1. Tworzenie środowiska
+py -3.12 -m venv myvenv
+
+2. Uruchamianie środowiska
+.\myvenv\Scripts\activate
+
+3. Instalacja pakietów
+pip install -r requirements.txt
+
+4. Migracja
+python manage.py makemigrations
+python manage.py migrate
+
+5. Dodanie roli i użytkownika
+python manage.py setup_groups
+
+6. Uruchamianie Django
+python manage.py runserver
+
+7. Zamykanie środowiska
+.\myvenv\Scripts\deactivate
